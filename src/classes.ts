@@ -9,7 +9,11 @@ class Folder {
     this.todos = args;
     this.length = this.todos.length;
   }
-  getTitile() {
+  changeTitle(newTitle: string) {
+    this.title = newTitle;
+    return this.title;
+  }
+  getTitle() {
     return this.title;
   }
   getTodos() {
